@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Portfolio: Seth Epstein</title>
+		<!-- <title>Portfolio: Seth Epstein</title> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Page description">
 		<meta name="author" content="Seth Epstein">
@@ -14,6 +14,8 @@
 		<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/animate.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		
 		<link href="css/style.min.css" rel="stylesheet" media="screen">
 		
 		<!--[if IE 7]>
@@ -23,7 +25,7 @@
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-
+		<script src="js/modernizr.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.8.2.min.js"%3E%3C/script%3E'))</script>
 		
@@ -31,7 +33,7 @@
 
 	<body>
 		
-		<div class="scroll-holder" data-stub="#home-stub" data-image="img/pano2.jpg" data-speed="2" style="background-color:black"></div>
+		<div class="scroll-holder" data-stub="#home-stub" data-image="img/panosmall.jpg" data-speed="2"></div>
 		<div class="scroll-holder" data-stub="#services-stub" data-image="img/wave.jpg"  data-speed="2"></div>
 		<div class="scroll-holder" data-stub="#about-stub" data-image="img/epic.jpg" data-speed="2"></div>
 		<div class="scroll-holder" data-stub="#portfolio-stub" data-image="img/street.jpg" data-speed="2"></div>
@@ -78,19 +80,23 @@
 				</div>
 				<div class="row-fluid">
 					<div class="span4">
-						<img src="img/bootstrap.jpg" alt="Web Design" />
-						<h4><i class="icon-bar-chart"></i>&nbsp;&nbsp;Web Design</h4>
-						<p><strong>Advanced HTML &amp; CSS </strong> - Responsive Web Design, HAML & SASS, jQuery, Detailed Positioning, Complex Selectors, Preprocessors, CSS3 Transforms / Transitions / Animations, Feature Support & Polyfills </p>
+						<div class="row" style="margin-left:0">
+						<img src="img/bootstrap.jpg" alt="Web Design" class="clear-both"/></div>
+						<i class="icon-laptop" id="awesome"></i>
+						<h4 style="float:left;line-height:100%;">Web Design<br>&nbsp;</h4>
+						<p class="clear-both"><strong>Front End Design </strong> - Responsive Web Design, HAML & SASS, jQuery / Javascript plugins, Creating Custom WordPress Themes, Best Practices using CSS3 & HTML5, Cross Browser Testing </p>
 
-						<p><strong>Web Development</strong> - the Ruby on Rails Web Application Framework, Javascript / AJAX, Domain Modeling, HTTP and RESTful Design, Consuming and Producing APIs, Agile Software Development </p>
+						<p><strong>Web Development</strong> - Ruby on Rails Web Application Framework, Active Admin CMS (Content Management System) with Carrierwave Image Handling, MySQL Database Management for Production and Development environments, Apache Server Setup, Javascript / AJAX, PHP / phpMyAdamin, Consuming and Producing APIs. </p>
 						
-						<p><strong>User Experience Design</strong> -  Usability testing, Wireframes, Style tiles, Heuristic reviews, User model creation / Personas, Field observation / Interviews, Interaction design and information architecture, and Site maps. </p>
+						<p><strong>User Experience Design</strong> - High Fidelity Prototypes, Wireframes, Style tiles, Site maps, User model creation / Personas, Usability testing, Interaction Design and Information Architecture. </p>
 												
 					</div>
 					<div class="span4">
-						<img src="img/graphic.jpg" alt="HTML5 &amp; CSS3" />
-						<h4><i class="icon-picture"></i>&nbsp;&nbsp;Graphic Design</h4>
-						<p><strong>Art Director </strong>- PinDotMedia - Atlanta, GA - Sept 2005 - Oct 2012</p>
+						<div class="row" style="margin-left:0">
+						<img src="img/graphic.jpg" alt="HTML5 &amp; CSS3" class="clear-both" /></div>
+						<i class="icon-picture" id="awesome"></i>
+						<h4 style="float:left;line-height:100%;">Art Direction /<br> Graphic Design</h4>
+						<p class="clear-both"><strong>Art Director </strong>- PinDotMedia - Atlanta, GA - Sept 2005 - Oct 2012</p>
 						<p><a href='http://www.pindotmedia.com' target="_blank"> www.pindotmedia.com </a></p>
 						<p> <em> Notable Clients </em> - <a href='http://www.midas.com' target="_blank"> Midas</a>,  <a href='http://www.remax.com' target="_blank"> RE/MAX, </a>  <a href='http://www.championwindow.com' target="_blank"> Champion</a>,  <a href='http://www.kroger.com' target="_blank"> Kroger</a> & <a href='http://www.storage-mart.com' target="_blank"> StorageMart </a>.  </p> 
 						<p>Responsible for the creation and oversight of print and interactive design for 35 clients advertising in markets throughout the United States and Canada.</p>
@@ -99,12 +105,14 @@
 
 					</div>
 					<div class="span4">
-						<img src="img/photog.jpg" alt="photography" />
-						<h4><i class="icon-camera"></i>&nbsp;&nbsp; Photography  /  Illustration</h4>
+						<div class="row" style="margin-left:0">
+						<img src="img/photog.jpg" alt="photography" class="clear-both"/></div>
+						<i class="icon-camera" id="awesome"></i>
+						<h4 style="float:left; line-height:100%;">Photography  /<br>Illustration</h4>
 						
-						<p><strong>Photography</strong> - Having worked in the graphic design industry for so long, OCD image manipulation using Photoshop, became much of a pastime <em> {insert sarcasm} </em>. Eventually I decided that I should be creating photography rather than editing it. So thanks to the Economic Stimulus Act of 2008, I immediately returned the money to the public and bought my first DSL Camera, the Nikon D40. </p>
+						<p class="clear-both"><strong>Photography</strong> - Having worked in the graphic design industry for so long, OCD image manipulation using Photoshop, became much of a pastime <em> {insert sarcasm} </em>. Eventually I decided that I should be creating photography rather than editing it. So thanks to the Economic Stimulus Act of 2008, I immediately returned the money to the public and bought my first DSL Camera, the Nikon D40. </p>
 						
-						<p> <strong>Illustration</strong> - My true hobby has always been illustration. In college I sold my first work of art <em> "The Ghetto of Athens"</em> &nbsp; to a philosophy professor at Emory University.  It was that masterpiece that ultimately set me on my path to being a Graphic Designer, and now a Web Designer.  </p>
+						<p> <strong>Illustration</strong> - My true hobby has always been illustration. In college I sold my first work of art <em> "The Ghetto of Athens"</em> &nbsp; to a philosophy professor at Emory University.  It was that masterpiece that ultimately set me on my path to being a Graphic Designer, Art Director, and now a Web Developer.</p>
 						
 					</div>
 				</div>
@@ -126,36 +134,43 @@
 					<div class="span4">
 						<i class="logo"><img src="img/imac-vector.png" alt="logo" /></i>
 						<h4>Web design</h4>
-						<p><strong style="color: #28abe2"> What I bring to the table</strong> : The capacity to understand & communicate effectively throughout the full spectrum of web design.  <strong style="color: #28abe2"> Great... OK.. Why? </strong>... Because I design websites from the <strong style="color: #28abe2">full stack</strong> perspective of : Front End, Development, and UX.     </p>
+						<p><strong style="color: #28abe2"> What I bring to the table</strong> : The capacity to understand & communicate effectively throughout the full spectrum of web design.  <strong style="color: #28abe2"> Great... OK.. Why? </strong>... Because I design websites from the <strong style="color: #28abe2">full stack</strong> perspective of : Front End, Development, and UX.</p>
 					</div>
 					<div class="span4">
-						<i class="icon-edit"></i>
-						<h4>HTML5 &amp; CSS3 Markup</h4>
-						<p>Use <strong style="color: #28abe2">classes</strong> where necessary.  Use <strong style="color: #28abe2">ids</strong> where necessary.  Use <strong style="color: #28abe2">preprocessors</strong> where necessary.  This is the mantra that I have been taught. This is what you should expect.</p>
+						<i class="logo"><img src="img/white-vector2.svg" alt="flash" /></i>
+						<h4>Rich Media and Flash Banner Design</h4>
+						<p>Rich Media Campaigns using Google's <a href="http://www.google.com/doubleclick/" target="blank"> DoubleClick.  Complex campaign based activity tracking.  Non-Rich Media Flash Banners, Using ActionScript 2.0 or 3.0 /  Adobe Flash CS5 - Creative Cloud</a> </p>
 					</div>
-					<div class="span4">
-						<i class="icon-font"></i>
-						<h4>Print design</h4>
-						<p>I could probably teach a course on the Adobe Creative Suite. Fundamentally I use:  <strong style="color: #28abe2">Photoshop</strong> for advanced image processing, <strong style="color: #28abe2">Illustrator</strong> for scalable vector design, and <strong style="color: #28abe2">InDesign</strong> for generalized layout, especially with text intensive projects.</p>
-					</div>
-				</div>
-				<div class="row-fluid">
-					<div class="span4">
-						<i class="icon-credit-card"></i>
-						<h4>Business cards</h4>
-						<p>Never be embarrassed by your business card again.  I make business cards that would send <a href='http://en.wikipedia.org/wiki/Patrick_Bateman' alt='Patrick Bateman' target='_blank'>Patrick Bateman</a> off the deep end. </p>
-					</div>
-					<div class="span4">
-						<i class="logo"><img src="img/white-vector.svg" alt="logo" /></i>
-						<h4>Logo design</h4>
-						<p>If you want to see some of my recent logo design work, check out: <a href='https://www.facebook.com/BakeHouseDC?fref=ts' alt=' BakeHouse' target='_blank'>BakeHouse</a> and <a href='https://www.facebook.com/RPBpay?fref=ts' alt=' Retriever' target='_blank'>Retriever of Palm Beach</a>.</p>
-					</div>
+					
 					<div class="span4">
 						<i class="icon-envelope-alt"></i>
 						<h4>Email marketing </h4>
 						<p>HTML integrated design : <strong style="color: #28abe2">get</strong> your clients attention, <strong style="color: #28abe2">get</strong> your message across, <strong style="color: #28abe2"> get</strong> your message sent. <strong style="color: #28abe2">Examples </strong>: <a href="amtrav3.html" target="blank"> 1 </a> , <a href="amtrav2.html" target="blank"> 2 </a> , <a href="amtrav1.html" target="blank"> 3 </a></p>
 						 
 					</div>
+
+				</div>
+				<div class="row-fluid">
+					<div class="span4">
+						<i class="icon-edit"></i>
+						<h4>HTML5 &amp; CSS3 Markup</h4>
+						<p>Use <strong style="color: #28abe2">classes</strong> where necessary.  Use <strong style="color: #28abe2">ids</strong> where necessary.  Use <strong style="color: #28abe2">preprocessors</strong> where necessary.  This is the mantra that I have been taught. This is what you should expect.</p>
+					</div>
+					
+					
+
+					<div class="span4">
+						<i class="logo"><img src="img/white-vector.svg" alt="logo" /></i>
+						<h4>Logo design</h4>
+						<p>If you want to see some of my recent logo design work, check out: <a href='https://www.facebook.com/BakeHouseDC?fref=ts' alt=' BakeHouse' target='_blank'>BakeHouse</a> and <a href='https://www.facebook.com/RPBpay?fref=ts' alt=' Retriever' target='_blank'>Retriever of Palm Beach</a>.</p>
+					</div>
+					
+					<div class="span4">
+						<i class="icon-font"></i>
+						<h4>Print design</h4>
+						<p>I could probably teach a course on the Adobe Creative Suite. Fundamentally I use:  <strong style="color: #28abe2">Photoshop</strong> for advanced image processing, <strong style="color: #28abe2">Illustrator</strong> for scalable vector design, and <strong style="color: #28abe2">InDesign</strong> for generalized layout, especially with text intensive projects.</p>
+					</div>
+
 				</div>
 			</div>
 
@@ -223,7 +238,7 @@
 											<div class="span4">
 												<a href="http://riseink.github.io/campbells/indx.html" target="_blank" alt="">
 													<img src="img/camp_thumb.jpg" />
-													<div><span>Campbells<br>New Business Isotope.js Demo</span></div>
+													<div><span>Campbells<br>New Business Demo <br>  <strong style="color: #fffc00; font-weight:normal">Tech Stack: Isotope.js prototype </strong><br>  <strong style="color: #fffc00; font-weight:normal">Go to Prototype</strong></span></div>
 												</a>
 											</div>
 											
@@ -231,7 +246,7 @@
 												<div class="span4">
 													<a href="http://www.schafercondoncarter.com/" target="_blank" alt="">
 														<img src="img/SCC_thumb.jpg"/>
-														<div><span>SCC<br>Front-End Redesign </span></div>
+														<div><span>SCC<br>Front-End Redesign <br>  <strong style="color: #fffc00; font-weight:normal">Tech Stack: Ruby on Rails</strong> <br>  <strong style="color: #fffc00; font-weight:normal">Go to Website</strong></span></div>
 													</a>
 												</div>
 												
@@ -242,7 +257,7 @@
 								<div class="span4">
 									<a href="http://www.nathansfamous.com/" target="_blank" alt="">
 										<img src="img/nathans.jpg"/>
-										<div><span>Nathan's Famous Hot Dogs, Front/Back End Build </span></div>
+										<div><span>Nathan's Famous Hot Dogs <br>Front / Back End Build <br>  <strong style="color: #fffc00; font-weight:normal">Tech Stack: Ruby on Rails / Jekyll</strong> <br>  <strong style="color: #fffc00; font-weight:normal">Go to Website</strong></span></div>
 									</a>
 								</div>
 
@@ -253,12 +268,51 @@
 									
 									<!-- Start Hidden Popup link content -->
 									
+									<div id="goldengate" class="mfp-hide">
+									  <div class="white-popup">
+									    <h3>"Golden Gate Bridge" - 2012</h3>
+											<img src="img/ggbridge.jpg">
+									  </div>
+									</div>
+									
 									<div id="southpoint" class="mfp-hide">
 									  <div class="white-popup">
-									    <h3> South Pointe Park, Miami Beach" - 2012</h3>
+									    <h3> "South Pointe Park, Miami Beach" - 2012</h3>
 											<img src="img/southpoint.jpg">
 									  </div>
 									</div>
+									
+									<div id="cloudgate" class="mfp-hide">
+									  <div class="white-popup">
+									    <h3> "Cloud Gate" - 2014</h3>
+											<img src="img/cloudgate.jpg">
+									  </div>
+									</div>
+									
+									<!-- ^^ Photography vv Illustration -->
+									
+									<div id="tigerstyle" class="mfp-hide">
+									  <div class="white-popup">
+									    <h3> "TigerStyle" - 2012</h3>
+											<img src="img/ill1.jpg">
+									  </div>
+									</div>
+									
+									<div id="riseguy" class="mfp-hide">
+									  <div class="white-popup">
+									    <h3>"Rise Guy - Baseline Illustrative Style"</h3>
+											<img src="img/riseguy.jpg">
+									  </div>
+									</div>
+									
+									<div id="warhol" class="mfp-hide">
+									  <div class="white-popup">
+									    <h3>"Warhol Tai Chi" - 2011</h3>
+											<img src="img/ill2.jpg">
+									  </div>
+									</div>
+									
+									
 									
 									<!-- End Hidden Popup link content -->
 									
@@ -267,21 +321,21 @@
 									<div class="row-fluid gallery thumbnails">
 
 										<div class="span4">
-											<a href="img/ggbridge.jpg" target="_blank" alt="">
+											<a href="#goldengate" class="open-gallery-link">
 												<img src="img/img1ph.jpg" />
-												<div><span>"Golden Gate Bridge" - 2012</span></div>
+												<div><span>"Golden Gate Bridge" - 2012 <br>  <strong style="color: #fffc00; font-weight:normal">Click To Expand</strong></span></div>
 											</a>
 										</div>
 										<div class="span4">
-											<a href="img/cloudgate.jpg" target="_blank" alt="">
+											<a href="#cloudgate" class="open-gallery-link">
 												<img src="img/img2ph.jpg"/>
-												<div><span>"Cloud Gate" - 2012</span></div>
+												<div><span>"Cloud Gate" - 2014<br>  <strong style="color: #fffc00; font-weight:normal">Click To Expand</strong></span></div>
 											</a>
 										</div>
 										<div class="span4">
-											<a href="#southpoint" alt="" class="open-gallery-link">
+											<a href="#southpoint" class="open-gallery-link">
 												<img src="img/img3ph.jpg"/>
-												<div><span>"South Pointe Park, Miami Beach" - 2012</span></div>
+												<div><span>"South Pointe Park, Miami Beach" - 2012<br>  <strong style="color: #fffc00; font-weight:normal">Click To Expand</strong></span></div>
 											</a>
 										</div>
 									</div>
@@ -292,21 +346,21 @@
 											<div class="row-fluid gallery thumbnails">
 
 												<div class="span4">
-													<a href="img/ill1.jpg" target="_blank" alt="">
+													<a href="#tigerstyle" class="open-gallery-link">
 														<img src="img/img3t.jpg"/>
-														<div><span>"TigerStyle" - 2012</span></div>
+														<div><span>"TigerStyle" - 2012<br>  <strong style="color: #fffc00; font-weight:normal">Click To Expand</strong></span></div>
 													</a>
 												</div>
 												<div class="span4">
-													<a href="img/riseguy.jpg" target="_blank" alt="">
+													<a href="#riseguy" class="open-gallery-link">
 														<img src="img/img1t.jpg" />
-														<div><span>"Rise Guy - Baseline Illustrative Style"</span></div>
+														<div><span>"Rise Guy - Baseline Illustrative Style"<br>  <strong style="color: #fffc00; font-weight:normal">Click To Expand</strong></span></div>
 													</a>
 												</div>
 												<div class="span4">
-													<a href="img/ill2.jpg" target="_blank" alt="">
+													<a href="#warhol" class="open-gallery-link">
 														<img src="img/img2t.jpg" />
-														<div><span>"Warhol Tai Chi" - 2011</span></div>
+														<div><span>"Warhol Tai Chi" - 2011<br>  <strong style="color: #fffc00; font-weight:normal">Click To Expand</strong></span></div>
 													</a>
 												</div>
 											</div>

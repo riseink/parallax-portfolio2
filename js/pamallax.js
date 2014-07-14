@@ -23,7 +23,7 @@ readyState(function()
 {
 	var $window = $(window);
 
-	var stubHeight = $window.height() / 2;
+	var stubHeight = $window.height() / 3;
 
 	$('.stub').css({'height': stubHeight + 'px'});
 	$('.stubheader').css({'margin-top': (stubHeight - $('#header').height()) / 2  + 'px'});
