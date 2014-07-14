@@ -41,7 +41,9 @@ readyState(function()
 		self.width($window.width());
 		self.height(target.height());
 
-		self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() + 'px;">');
+		// self.html('<img src="' + self.data('image') + '" class=" responsive-header">');
+    self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() + 'px;">');
+		
 
 		var yPos = (($window.scrollTop() - start) / speed);
 
@@ -82,7 +84,9 @@ readyState(function()
 			self.width($window.width());
 			self.height(target.height());
 
+      // self.html('<img src="' + self.data('image') + '" class="responsive-header">');
 			self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() + 'px;">');
+  		
 
 			yPos = (($window.scrollTop()-start) / speed);
 
