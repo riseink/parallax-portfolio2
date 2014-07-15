@@ -10,3 +10,10 @@
 .clear-both{
   clear:both;
 }
+
+@media (max-width: 480px) {
+	.scroll-holder img{
+		height: 300px!important;		
+		overflow:hidden;
+	}
+}
