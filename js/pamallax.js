@@ -23,7 +23,7 @@ readyState(function()
 {
 	var $window = $(window);
 
-	var stubHeight = $window.height() / 3;
+	var stubHeight = $window.height() / 2;
 
 	$('.stub').css({'height': stubHeight + 'px'});
 	$('.stubheader').css({'margin-top': (stubHeight - $('#header').height()) / 2  + 'px'});
@@ -41,7 +41,9 @@ readyState(function()
 		self.width($window.width());
 		self.height(target.height());
 
-		self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() + 'px;">');
+	    self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() +'px;"' + '"class="responsive-img">');
+    	// self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() + 'px;">');
+		
 
 		var yPos = (($window.scrollTop() - start) / speed);
 
@@ -82,7 +84,9 @@ readyState(function()
 			self.width($window.width());
 			self.height(target.height());
 
-			self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() + 'px;">');
+		    self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() +'px;"' + '"class="responsive-img">');
+			// self.html('<img src="' + self.data('image') + '" style=" width:' + $window.width() + 'px;">');
+  		
 
 			yPos = (($window.scrollTop()-start) / speed);
 
