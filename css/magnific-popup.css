@@ -368,9 +368,9 @@ img.mfp-img {
   padding-top: 0; }
 
   
-.white-popup {
+.black-popup {
   position: relative;
-  background: #FFF;
+  background: rgba(0,0,0, .5);
   padding: 40px;
   width: auto;
   max-width: 700px;
@@ -378,7 +378,11 @@ img.mfp-img {
   text-align: center;
 }
 
-.white-popup img{
+.black-popup img{
   max-height:600px;
+}
+
+.black-popup h3{
+  color: #28abe2
 }
 
